@@ -1,0 +1,12 @@
+<!-- <p id="notice">Book was successfully created.</p> -->
+<table>
+<td><p><strong>Title:</strong></p></td>
+<td><%= @post.title %></td>
+</table>
+<table>
+<td><p><strong>Body:</strong></p></td>
+<td><%= @post.body %></td>
+</table>
+<%= link_to "Edit",edit_post_path(@post)  %>
+|
+<%= link_to "Back","/index" %>
