@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'posts/new'
-get "/top" => "books#top"
+  root :to=> "posts#top"
+# get "/top" => "posts#top"
 get "/index" => "posts#index"
 post "/posts" => "posts#create"
 get "/posts" => "posts#index"
